@@ -13,7 +13,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: Synopsys Action
-        uses: synopsys-sig/synopsys-action@v0.1.0
+        uses: synopsys-sig/synopsys-action@v0.2.0
         with:
           polaris_serverUrl: ${{ secrets.POLARIS_SERVER_URL }}
           polaris_accessToken: ${{ secrets.POLARIS_ACCESS_TOKEN }}
@@ -22,4 +22,4 @@ jobs:
           polaris_assessment_types: "[\"SCA\", \"SAST\"]"
           bridge_download_url: ${{ env.LINUX_BRIDGE_URL }}
         env:
-          LINUX_BRIDGE_URL: "https://sig-repo.synopsys.com/artifactory/bds-integrations-release/com/synopsys/integration/synopsys-action/0.1.72/ci-package-0.1.72-linux64.zip"
+          LINUX_BRIDGE_URL: "https://sig-repo.synopsys.com/artifactory/bds-integrations-release/com/synopsys/integration/synopsys-action/0.1.114/ci-package-0.1.114-linux64.zip"
